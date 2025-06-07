@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IHOP</title>
+    <!-- Incluye Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define la fuente Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4 md:px-8 flex items-center justify-between flex-wrap">
+        <!-- Contenedor del Logo -->
+        <div class="flex-shrink-0 mr-6">
+            <a href="#" class="block">
+                <img src="./img/logo-ihop-mexico.svg" alt="Logo de IHOP" class="h-10 w-auto rounded-md object-contain">
+            </a>
+        </div>
+
+        <!-- Navegación Principal -->
+        <nav class="flex-grow">
+            <ul class="flex justify-end space-x-4 sm:space-x-8 text-sm md:text-base font-medium">
+                <li><a href="#" class="text-red-600 hover:text-red-700 transition-colors duration-200 p-2 rounded-md">MENÚ</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-gray-900 transition-colors duration-200 p-2 rounded-md">SUCURSALES</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-gray-900 transition-colors duration-200 p-2 rounded-md">CONTÁCTANOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal y Menú Lateral -->
+    <div class="flex-grow flex flex-col md:flex-row container mx-auto p-4 md:p-8 gap-8">
+        <!-- Menú Lateral Izquierdo -->
+        <aside class="w-full md:w-64 bg-white rounded-lg shadow-md p-6">
+            <nav>
+                <ul class="space-y-3">
+                    <li><a href="#" class="block text-blue-700 hover:text-red-600 font-medium transition-colors duration-200">FAVORITOS IHOP</a></li>
+                    <li><a href="#" class="block text-blue-700 hover:text-red-600 font-medium transition-colors duration-200">WORLD FAMOUS PANCAKES</a></li>
+                    <li><a href="#" class="block text-blue-700 hover:text-red-600 font-medium transition-colors duration-200">DESAYUNOS</a></li>
+                    <li><a href="#" class="block text-blue-700 hover:text-red-600 font-medium transition-colors duration-200">BENEDICTINOS</a></li>
+                    <li><a href="#" class="block text-blue-700 hover:text-red-600 font-medium transition-colors duration-200">OMELETTES</a></li>
+                    <li><a href="#" class="block text-blue-700 hover:text-red-600 font-medium transition-colors duration-200">BURRITOS</a></li>
+                    <li><a href="#" class="block text-blue-700 hover:text-red-600 font-medium transition-colors duration-200">WAFFLES & FRENCH TOAST</a></li>
+                    <li><a href="#" class="block text-blue-700 hover:text-red-600 font-medium transition-colors duration-200">CREPAS</a></li>
+                    <li><a href="#" class="block text-blue-700 hover:text-red-600 font-medium transition-colors duration-200">NEW KIDS MENU</a></li>
+                    <li><a href="#" class="block text-blue-700 hover:text-red-600 font-medium transition-colors duration-200">ENTRADAS</a></li>
+                    <li><a href="#" class="block text-blue-700 hover:text-red-600 font-medium transition-colors duration-200">ENSALADAS</a></li>
+                    <li><a href="#" class="block text-blue-700 hover:text-red-600 font-medium transition-colors duration-200">HAMBURGUESAS</a></li>
+                    <li><a href="#" class="block text-blue-700 hover:text-red-600 font-medium transition-colors duration-200">PLATOS FUERTES</a></li>
+                    <li><a href="#" class="block text-blue-700 hover:text-red-600 font-medium transition-colors duration-200">SÁNDWICHES</a></li>
+                    <li><a href="#" class="block text-blue-700 hover:text-red-600 font-medium transition-colors duration-200">BEBIDAS</a></li>
+                </ul>
+            </nav>
+            <div class="mt-6">
+                <a href="#" class="text-red-600 hover:text-red-700 font-medium transition-colors duration-200">DESCARGAR MENÚ (PDF)</a>
+            </div>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <main class="flex-grow bg-white rounded-lg shadow-md p-6">
+            <!-- Sección: Favoritos IHOP -->
+            <section class="mb-8">
+                <div class="bg-blue-700 p-4 rounded-t-lg">
+                    <h2 class="text-xl font-bold text-white uppercase">FAVORITOS IHOP</h2>
+                </div>
+                <div class="bg-white p-4 rounded-b-lg grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <!-- Item 1: 2X2X2 -->
+                    <div class="border border-gray-200 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+                        <img src="./img/1-1.png" alt="Imagen de 2X2X2 Placeholder" class="w-full h-auto rounded-md mb-2 object-cover">
+                        <p class="text-blue-700 font-semibold text-sm">2X2X2</p>
+                    </div>
+                    <!-- Item 2: HUEVOS RANCHEROS -->
+                    <div class="border border-gray-200 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+                        <img src="./img/1-2.png" alt="Imagen de Huevos Rancheros Placeholder" class="w-full h-auto rounded-md mb-2 object-cover">
+                        <p class="text-blue-700 font-semibold text-sm">HUEVOS RANCHEROS</p>
+                    </div>
+                    <!-- Item 3: HOUSE SCRAMBLE -->
+                    <div class="border border-gray-200 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+                        <img src="./img/1-3.png" alt="Imagen de House Scramble Placeholder" class="w-full h-auto rounded-md mb-2 object-cover">
+                        <p class="text-blue-700 font-semibold text-sm">HOUSE SCRAMBLE</p>
+                    </div>
+                    <!-- Item 4: FRENCH TOAST BREAKFAST -->
+                    <div class="border border-gray-200 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+                        <img src="./img/1-4.png" alt="Imagen de French Toast Breakfast Placeholder" class="w-full h-auto rounded-md mb-2 object-cover">
+                        <p class="text-blue-700 font-semibold text-sm">FRENCH TOAST BREAKFAST</p>
+                    </div>
+                    <!-- Item 5: HAM & CHEESE OMELETTE -->
+                    <div class="border border-gray-200 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+                        <img src="./img/1-5.png" alt="Imagen de Ham & Cheese Omelette Placeholder" class="w-full h-auto rounded-md mb-2 object-cover">
+                        <p class="text-blue-700 font-semibold text-sm">HAM & CHEESE OMELETTE</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección: WORLD FAMOUS PANCAKES -->
+            <section class="mb-8">
+                <div class="bg-blue-700 p-4 rounded-t-lg">
+                    <h2 class="text-xl font-bold text-white uppercase">WORLD FAMOUS PANCAKES</h2>
+                </div>
+                <div class="bg-white p-4 rounded-b-lg grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <!-- Item 1: ORIGINAL BUTTERMILK -->
+                    <div class="border border-gray-200 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+                        <img src="./img/2-1.jpg" alt="Imagen de Original Buttermilk Pancakes Placeholder" class="w-full h-auto rounded-md mb-2 object-cover">
+                        <p class="text-blue-700 font-semibold text-sm">ORIGINAL BUTTERMILK</p>
+                    </div>
+                    <!-- Item 2: CHOCOLATE CHOCOLATE CHIP -->
+                    <div class="border border-gray-200 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+                        <img src="./img/2-2.jpg" alt="Imagen de Chocolate Chocolate Chip Pancakes Placeholder" class="w-full h-auto rounded-md mb-2 object-cover">
+                        <p class="text-blue-700 font-semibold text-sm">CHOCOLATE CHOCOLATE CHIP</p>
+                    </div>
+                    <!-- Item 3: DOUBLE BLUEBERRY -->
+                    <div class="border border-gray-200 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+                        <img src="./img/2-3.jpg" alt="Imagen de Double Blueberry Pancakes Placeholder" class="w-full h-auto rounded-md mb-2 object-cover">
+                        <p class="text-blue-700 font-semibold text-sm">DOUBLE BLUEBERRY</p>
+                    </div>
+                    <!-- Item 4: MEXICAN CAJETA -->
+                    <div class="border border-gray-200 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+                        <img src="./img/2-4.jpg" alt="Imagen de Mexican Cajeta Pancakes Placeholder" class="w-full h-auto rounded-md mb-2 object-cover">
+                        <p class="text-blue-700 font-semibold text-sm">MEXICAN CAJETA</p>
+                    </div>
+                    <!-- Item 5: NEW YORK CHEESECAKE -->
+                    <div class="border border-gray-200 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+                        <img src="./img/2-5.jpg" alt="Imagen de New York Cheesecake Pancakes Placeholder" class="w-full h-auto rounded-md mb-2 object-cover">
+                        <p class="text-blue-700 font-semibold text-sm">NEW YORK CHEESECAKE</p>
+                    </div>
+                    <!-- Item 6: PAY DE LIMÓN -->
+                    <div class="border border-gray-200 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+                        <img src="./img/2-6.jpg" alt="Imagen de Pay de Limón Pancakes Placeholder" class="w-full h-auto rounded-md mb-2 object-cover">
+                        <p class="text-blue-700 font-semibold text-sm">PAY DE LIMÓN</p>
+                    </div>
+                    <!-- Item 7: STRAWBERRY BANANA -->
+                    <div class="border border-gray-200 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+                        <img src="./img/2-7.jpg" alt="Imagen de Strawberry Banana Pancakes Placeholder" class="w-full h-auto rounded-md mb-2 object-cover">
+                        <p class="text-blue-700 font-semibold text-sm">STRAWBERRY BANANA</p>
+                    </div>
+                    <!-- Item 8: CUPCAKE PANCAKES -->
+                    <div class="border border-gray-200 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+                        <img src="./img/2-8.jpg" alt="Imagen de Cupcake Pancakes Placeholder" class="w-full h-auto rounded-md mb-2 object-cover">
+                        <p class="text-blue-700 font-semibold text-sm">CUPCAKE PANCAKES</p>
+                    </div>
+                    <!-- Item 9: CINN-A-STACK ® PANCAKES -->
+                    <div class="border border-gray-200 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+                        <img src="./img/2-9.jpg" alt="Imagen de Cinn-a-stack Pancakes Placeholder" class="w-full h-auto rounded-md mb-2 object-cover">
+                        <p class="text-blue-700 font-semibold text-sm">CINN-A-STACK ® PANCAKES</p>
+                    </div>
+                    <!-- Item 10: PANCAKE TOWER -->
+                    <div class="border border-gray-200 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+                        <img src="./img/2-10.jpg" alt="Imagen de Pancake Tower Placeholder" class="w-full h-auto rounded-md mb-2 object-cover">
+                        <p class="text-blue-700 font-semibold text-sm">PANCAKE TOWER</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-red-700 text-white p-6 md:p-8">
+    <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 md:mb-8">
+            <!-- Columna de Enlaces Principales del Footer -->
+            <nav class="flex-grow grid grid-cols-2 sm:grid-cols-4 gap-y-4 md:gap-x-8 mb-6 md:mb-0">
+                <a href="#" class="text-lg hover:underline">Menú</a>
+                <a href="#" class="text-lg hover:underline">Sucursales</a>
+                <a href="#" class="text-lg hover:underline">Facturación</a>
+                <a href="#" class="text-lg hover:underline">Adquiere Una Franquicia</a>
+            </nav>
+
+            <!-- Sección Únete a la Conversación -->
+            <div class="text-left flex flex-col items-start">
+                <p class="text-2xl font-semibold mb-3">Únete a la conversación</p>
+                <div class="flex space-x-4">
+                    <!-- Placeholder para imagen de TikTok -->
+                    <a href="#" class="block">
+                        <img src="./img/tiktok.png" alt="Icono de TikTok" class="h-8 w-8 rounded-full object-contain" onerror="this.onerror=null;this.src='https://placehold.co/32x32/ff0050/ffffff?text=Tik';">
+                    </a>
+                    <!-- Placeholder para imagen de Instagram -->
+                    <a href="#" class="block">
+                        <img src="./img/ig.png" alt="Icono de Instagram" class="h-8 w-8 rounded-full object-contain" onerror="this.onerror=null;this.src='https://placehold.co/32x32/833AB4/ffffff?text=Ins';">
+                    </a>
+                    <!-- Placeholder para imagen de Facebook -->
+                    <a href="#" class="block">
+                        <img src="./img/fb.png" alt="Icono de Facebook" class="h-8 w-8 rounded-full object-contain" onerror="this.onerror=null;this.src='https://placehold.co/32x32/1877F2/ffffff?text=FB';">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="border-red-600 mb-6 md:mb-4">
+
+        <!-- Sección de Copyright y Enlaces Legales -->
+        <div class="flex flex-col md:flex-row justify-between items-center text-xs">
+            <p class="mb-3 md:mb-0">&copy; 2025 IHOP Restaurants LLC.</p>
+            <nav class="flex flex-wrap justify-start md:justify-start space-x-4 sm:space-x-6">
+                <a href="#" class="hover:underline text-xs">Bolsa de Empleo</a>
+                <a href="#" class="hover:underline text-xs">Términos de uso</a>
+                <a href="#" class="hover:underline text-xs">Política de privacidad</a>
+                <a href="#" class="hover:underline text-xs">Mapa del sitio</a>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
