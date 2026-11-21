@@ -554,6 +554,7 @@ a:hover {
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 12px;
   margin-bottom: 22px;
+  min-height: 88px;
 }
 
 .dag-node {
@@ -605,6 +606,7 @@ a:hover {
   border: 1px solid var(--border-subtle);
   border-radius: 12px;
   padding: 20px;
+  min-height: 240px;
 }
 
 .inspector-header {
@@ -732,6 +734,11 @@ a:hover {
 .timeline-body strong {
   color: var(--text-main);
   font-weight: 600;
+}
+
+.timeline-body a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* ==================== FOOTER ==================== */
