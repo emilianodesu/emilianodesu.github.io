@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2309090b'/%3E%3Ccircle cx='16' cy='16' r='8' fill='%2310b981'/%3E%3C/svg%3E" />
+  <title>Carlos Emiliano Mendoza | Data Engineer &amp; AI/ML Systems</title>
+  <meta
+    name="description"
+    content="Portfolio of Carlos Emiliano Mendoza Hernández — Data Engineer & AI/ML Engineer. Analytics Engineer Intern at Nu México, former Amazon SDE Intern. Apache Spark, DuckDB, PostGIS, Dagster, LightGBM, and AWS."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" aria-label="Primary navigation">
+    <div class="container nav-content">
+      <a href="#" class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        emilianodesu<span class="brand-accent">.dev</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#pipeline">Architecture DAG</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://github.com/emilianodesu" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.66.79.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/emilianodesu/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- ==================== HERO ==================== -->
+    <header class="hero">
+      <div class="container">
+        <div class="hero-badge">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span>OPEN FOR JUNIOR DATA &amp; AI/ML ENGINEERING ROLES</span>
+        </div>
+
+        <h1 class="hero-title">
+          Building reliable <span class="text-gradient">distributed data platforms</span> &amp; verifiable ML systems.
+        </h1>
+
+        <p class="hero-subtitle">
+          Hi, I'm <strong>Carlos Emiliano Mendoza Hernández</strong> — Analytics Engineer Intern at <strong>Nu México</strong>
+          and former SDE Intern at <strong>Amazon</strong>. I engineer batch, geospatial, and distributed Spark platforms
+          with strict data contracts, empirical benchmarks, and automated CI verification. Dual foundation in
+          <strong>Computer Engineering</strong> &amp; <strong>Data Science</strong> at <strong>UNAM</strong> (GPA 9.52/10)
+          with High Distinction AI coursework at <strong>UTS Sydney</strong>.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">Explore Flagship Platforms</a>
+          <a href="#pipeline" class="btn btn-secondary">Inspect Interactive DAG</a>
+          <a href="mailto:cemh.fi@comunidad.unam.mx" class="btn btn-secondary">Email Me</a>
+        </div>
+
+        <div class="metrics-row" aria-label="Verified engineering highlights">
+          <div class="metric-card">
+            <div class="metric-value emerald">41.47M / 68.47M</div>
+            <div class="metric-label">Official TLC trips (DuckDB) &amp; SNAP edges (Spark 3.5) verified</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value sky">307 Tests</div>
+            <div class="metric-label">Passing across 3 public CI-green repositories (229 + 71 + 7)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">Nu &amp; Amazon</div>
+            <div class="metric-label">Fintech Data Mesh &amp; Devices Software Engineering Internships</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">9.52 / 10</div>
+            <div class="metric-label">UNAM Data Science (100% credits) · UTS Australia Exchange (HD)</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==================== SECTION 1: FEATURED PLATFORMS ==================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <span class="section-tag">Verified Engineering Work</span>
+        <h2 class="section-title">Featured Platforms &amp; Open Source</h2>
+        <p class="section-desc">
+          Three end-to-end production-grade repositories — each backed by deterministic acquisition, automated GitHub Actions CI,
+          empirical benchmarks, and a live interactive showcase — plus open-source teaching work at UNAM.
+        </p>
+
+        <div class="project-filters" role="group" aria-label="Filter projects by track">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All Projects (4)</button>
+          <button class="filter-btn" type="button" data-filter="de" aria-pressed="false">Data Engineering</button>
+          <button class="filter-btn" type="button" data-filter="ml" aria-pressed="false">AI &amp; ML Systems</button>
+          <button class="filter-btn" type="button" data-filter="teaching" aria-pressed="false">Teaching &amp; Open Source</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Flagship 1: HVFHV -->
+          <article class="project-card flagship" data-category="de">
+            <div>
+              <div class="project-card-top">
+                <span class="project-category">Flagship · Batch Data Reliability</span>
+                <span class="ci-pill">CI Passing · 229 Tests</span>
+              </div>
+              <h3 class="project-title">NYC Mobility Data Reliability Platform (HVFHV)</h3>
+              <p class="project-desc">
+                Single-machine batch platform auditing official NYC TLC Uber/Lyft trips across the 2025 Congestion Pricing
+                <code>24→25</code> column schema transition with zero silent coercion, atomic SQLite Compare-and-Swap (CAS)
+                publication control, Dagster lineage, and exact Type 7 continuous quantiles.
+              </p>
+              <div class="project-metrics">
+                <span class="metric-chip">41.47M trips</span>
+                <span class="metric-chip">32.63s build</span>
+                <span class="metric-chip">0 WAL / 0 spill</span>
+                <span class="metric-chip">1.923s cold query</span>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">DuckDB 2.0</span>
+                <span class="project-tag">SQLite CAS</span>
+                <span class="project-tag">Dagster 1.13</span>
+                <span class="project-tag">PyArrow</span>
+                <span class="project-tag">Streamlit</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="https://emilianodesu.github.io/nyc-mobility-data-platform/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Live Showcase</a>
+              <a href="https://github.com/emilianodesu/nyc-mobility-data-platform" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">GitHub Source</a>
+            </div>
+          </article>
+
+          <!-- Flagship 2: MX Weather MOS -->
+          <article class="project-card flagship" data-category="de ml">
+            <div>
+              <div class="project-card-top">
+                <span class="project-category">Flagship · Geospatial DE + AI/ML</span>
+                <span class="ci-pill">CI Passing · 71 Tests</span>
+              </div>
+              <h3 class="project-title">MX Weather MOS — Forecast Verification &amp; ML Platform</h3>
+              <p class="project-desc">
+                100% Docker-reproducible operational weather ingestion and ML post-processing platform across 31 Mexican state
+                capitals. Combines PostgreSQL/PostGIS temporal revisioning, leakage-free LightGBM quantile MOS, Isotonic rain
+                calibration, FastAPI serving, and a WCAG 2.1 AAA React + Leaflet map.
+              </p>
+              <div class="project-metrics">
+                <span class="metric-chip">-30.7% tmax RMSE</span>
+                <span class="metric-chip">-16.8% tmax MAE</span>
+                <span class="metric-chip">-77.2% rain Brier</span>
+                <span class="metric-chip">31/32 capitals</span>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">PostgreSQL / PostGIS</span>
+                <span class="project-tag">LightGBM</span>
+                <span class="project-tag">FastAPI</span>
+                <span class="project-tag">Docker</span>
+                <span class="project-tag">React + Leaflet</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="https://emilianodesu.github.io/mx-weather-mos/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Live Interactive App</a>
+              <a href="https://github.com/emilianodesu/mx-weather-mos" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">GitHub Source</a>
+            </div>
+          </article>
+
+          <!-- Flagship 3: Spark Graph Ranking -->
+          <article class="project-card flagship" data-category="de">
+            <div>
+              <div class="project-card-top">
+                <span class="project-category">Flagship · Distributed Apache Spark</span>
+                <span class="ci-pill">CI Passing · 7 Tests</span>
+              </div>
+              <h3 class="project-title">Spark Graph Ranking — Catalyst/Tungsten Engine</h3>
+              <p class="project-desc">
+                Apache Spark 3.5 DataFrame engine implementing PageRank, Topic-Sensitive PageRank, and HITS over real Stanford
+                SNAP graphs up to 4.85M nodes &amp; 68.47M directed edges. Benchmarked head-to-head against a Python RDD
+                baseline with Spark REST UI stage telemetry and machine-precision NetworkX equivalence.
+              </p>
+              <div class="project-metrics">
+                <span class="metric-chip">68.47M edges</span>
+                <span class="metric-chip">4.34x–8.37x faster</span>
+                <span class="metric-chip">0 B disk spill</span>
+                <span class="metric-chip">L1 &le; 1.43e-16</span>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Apache Spark 3.5</span>
+                <span class="project-tag">PySpark DataFrames</span>
+                <span class="project-tag">Parquet</span>
+                <span class="project-tag">NetworkX</span>
+                <span class="project-tag">Docker</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="https://emilianodesu.github.io/spark-graph-ranking/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Live Showcase</a>
+              <a href="https://github.com/emilianodesu/spark-graph-ranking" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">GitHub Source</a>
+            </div>
+          </article>
+
+          <!-- Supporting: SIAFI Handbook -->
+          <article class="project-card" data-category="teaching ml">
+            <div>
+              <div class="project-card-top">
+                <span class="project-category">Open Source · Technical Leadership</span>
+                <span class="ci-pill">4 Stars · 50+ Hrs Taught</span>
+              </div>
+              <h3 class="project-title">SIAFI Data Science &amp; ML Handbook (UNAM)</h3>
+              <p class="project-desc">
+                Open-source modular curriculum authored for UNAM's Artificial Intelligence Society covering Python data
+                pipelines, SQL fundamentals, classical Machine Learning, and Deep Learning in PyTorch, published with Quarto
+                and Jupyter Notebooks.
+              </p>
+              <div class="project-metrics">
+                <span class="metric-chip">50+ hours delivered</span>
+                <span class="metric-chip">Open-source curriculum</span>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">PyTorch</span>
+                <span class="project-tag">Pandas / NumPy</span>
+                <span class="project-tag">Quarto</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="https://emilianodesu.github.io/SIAFI-2026-1/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Read Handbook</a>
+              <a href="https://github.com/emilianodesu/SIAFI-2026-1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">GitHub Source</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 2: FLAGSHIP-AWARE INTERACTIVE DAG ==================== -->
+    <section id="pipeline" class="section">
+      <div class="container">
+        <span class="section-tag">Interactive Systems Architecture</span>
+        <h2 class="section-title">Flagship Data Engineering DAG Inspector</h2>
+        <p class="section-desc">
+          Select any of the three flagship platforms below and click through its 5 pipeline stages to inspect real architectural
+          trade-offs, verified metrics, and production code patterns.
+        </p>
+
+        <div class="dag-switcher" role="tablist" aria-label="Select flagship pipeline architecture">
+          <button class="dag-switch-btn" type="button" role="tab" id="dag-tab-hvfhv" aria-selected="true" data-flagship="hvfhv">
+            NYC Mobility (HVFHV · DuckDB/CAS)
+          </button>
+          <button class="dag-switch-btn" type="button" role="tab" id="dag-tab-weather" aria-selected="false" data-flagship="weather">
+            MX Weather MOS (PostGIS/LightGBM)
+          </button>
+          <button class="dag-switch-btn" type="button" role="tab" id="dag-tab-spark" aria-selected="false" data-flagship="spark">
+            Spark Graph Ranking (Catalyst/Tungsten)
+          </button>
+        </div>
+
+        <div class="dag-container">
+          <div class="dag-header">
+            <div>
+              <div class="dag-title" id="dag-project-title">NYC Mobility Data Reliability Platform (HVFHV)</div>
+              <span class="dag-subtitle" id="dag-project-subtitle">41,474,517 OFFICIAL NYC TLC TRIPS · 229 PASSING TESTS · ZERO CLOUD OVERHEAD</span>
+            </div>
+            <span class="ci-pill" id="dag-status-pill">Status: CI Verified</span>
+          </div>
+
+          <div class="dag-pipeline-flow" id="dag-nodes-container" role="group" aria-label="Pipeline stages"></div>
+
+          <div class="dag-inspector" aria-live="polite">
+            <div class="inspector-header">
+              <div id="inspector-title" class="inspector-title"></div>
+              <div id="inspector-badges" class="inspector-badges"></div>
+            </div>
+
+            <div class="inspector-body">
+              <div class="inspector-detail-box">
+                <h4>Architectural Decision</h4>
+                <p id="inspector-desc"></p>
+                <h4>Verified Outcome &amp; Evidence</h4>
+                <p id="inspector-exp"></p>
+              </div>
+              <div class="inspector-detail-box">
+                <h4>Implementation Excerpt</h4>
+                <pre class="code-preview"><code id="inspector-code"></code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 3: EXPERIENCE & EDUCATION ==================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <span class="section-tag">Career &amp; Academic Track</span>
+        <h2 class="section-title">Experience &amp; Credentials</h2>
+        <p class="section-desc">
+          Hands-on distributed data engineering, software engineering rigor, and mathematical foundations across fintech,
+          global tech, and international academic research.
+        </p>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <span class="timeline-role">Analytics Engineer Intern · <span class="timeline-company">Nu México</span></span>
+              <span class="timeline-date">Jun 2026 – Present · Mexico City</span>
+            </div>
+            <div class="timeline-body">
+              <ul>
+                <li>Contributed to dataset migrations supporting decentralized, domain-oriented <strong>Data Mesh</strong> architectures using <strong>Apache Spark</strong>, <strong>Scala</strong>, and <strong>Databricks</strong> on AWS, adapting transformation logic to decouple data ownership.</li>
+                <li>Engineered event-driven workflow automations with automated compliance guardrails and ticket validation across <strong>Slack</strong>, <strong>Jira</strong>, and <strong>Google Calendar APIs</strong>.</li>
+                <li>Modeled analytical data structures and authored distributed <strong>SQL</strong> queries for operational performance dashboards on Databricks.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <span class="timeline-role">Software Development Engineer (SDE) Intern · <span class="timeline-company">Amazon (Devices Team)</span></span>
+              <span class="timeline-date">Jan 2026 – Apr 2026 · Mexico City</span>
+            </div>
+            <div class="timeline-body">
+              <ul>
+                <li>Applied <strong>Spec-Driven Development (SDD)</strong> leveraging AI-assisted software engineering workflows to translate formal technical specifications into verified software designs and reproducible test suites.</li>
+                <li>Explored technical designs and feasibility for internal developer CLI tooling focused on build traceability, package version tracking, and developer productivity.</li>
+                <li>Maintained adherence to Amazon software engineering standards, documenting system contracts and architectural trade-offs.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <span class="timeline-role">Training Core Member &amp; Instructor · <span class="timeline-company">SIAFI UNAM</span></span>
+              <span class="timeline-date">Jan 2025 – Jun 2026 · Mexico City</span>
+            </div>
+            <div class="timeline-body">
+              <ul>
+                <li>Designed and published the open-source <a href="https://github.com/emilianodesu/SIAFI-2026-1" target="_blank" rel="noopener noreferrer">SIAFI Data Science &amp; ML Handbook</a> spanning Python data pipelines, Machine Learning, and PyTorch.</li>
+                <li>Personally delivered <strong>50+ hours</strong> of hands-on coding sessions in Pandas, NumPy, SQL querying, and collaborative Git workflows.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <span class="timeline-role">B.S. in Data Science &amp; AI Exchange · <span class="timeline-company">UNAM</span> &amp; <span class="timeline-company">UTS Sydney</span></span>
+              <span class="timeline-date">Aug 2021 – Jun 2026 · 100% Credits Completed</span>
+            </div>
+            <div class="timeline-body">
+              <ul>
+                <li><strong>UNAM:</strong> Completed 5 semesters of Computer Engineering core curriculum and 100% of Data Science coursework with a cumulative <strong>GPA of 9.52 / 10.0</strong> (Degree in progress, full-time availability).</li>
+                <li><strong>University of Technology Sydney (Australia):</strong> International AI exchange earning <strong>High Distinction</strong> in Reinforcement Learning &amp; Computer Vision and <strong>Distinction</strong> in Machine Learning.</li>
+                <li><strong>Cloud Certifications:</strong> 12 verified credentials across Google Cloud, Microsoft Azure (AZ-900, AI-900), and DeepLearning.AI.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>Carlos Emiliano Mendoza Hernández · Junior Data Engineer &amp; AI/ML Engineer · Mexico City</div>
+      <div class="footer-links">
+        <a href="https://github.com/emilianodesu" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/emilianodesu/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:cemh.fi@comunidad.unam.mx">Email</a>
+        <a href="https://emilianodesu.github.io/nyc-mobility-data-platform/" target="_blank" rel="noopener noreferrer">HVFHV</a>
+        <a href="https://emilianodesu.github.io/mx-weather-mos/" target="_blank" rel="noopener noreferrer">Weather MOS</a>
+        <a href="https://emilianodesu.github.io/spark-graph-ranking/" target="_blank" rel="noopener noreferrer">Spark Graph</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
